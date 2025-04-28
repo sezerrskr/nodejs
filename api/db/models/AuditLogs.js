@@ -9,7 +9,7 @@ const schema = mongoose.Schema({
     log: String,
 }, {
     versionKey: false,
-    timeStamps: {
+    timestamps: {
         createdAt: "created_at",
         updatedAt: "updated_at"
     }
@@ -20,4 +20,4 @@ class AuditLogs extends mongoose.Model {
 }
 
 schema.loadClass(AuditLogs);
-moduele.export = mongoose.model("audit_logs", schema);
+module.exports = mongoose.model("audit_logs", schema);

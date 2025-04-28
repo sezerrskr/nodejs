@@ -9,7 +9,7 @@ const schema = mongoose.Schema({
     last_name: String,
     phone_number: String,
 }, {
-    timeStamps: {
+    timestamps: {
         createdAt: "created_at",
         updatedAt: "updated_at"
     }
@@ -20,4 +20,4 @@ class Users extends mongoose.Model {
 }
 
 schema.loadClass(Users);
-moduele.export = mongoose.model("users", schema);
+module.exports = mongoose.model("users", schema);

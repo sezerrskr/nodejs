@@ -6,7 +6,7 @@ const schema = mongoose.Schema({
     is_active: {type: Boolean, default: true},
     created_by: {
         type: mongoose.SchemaTypes.ObjectId,
-        required: true
+        // required: true
     }
 },{
     versionKey: false,
@@ -20,5 +20,5 @@ class Roles extends mongoose.Model {
 
 }
 
-schema.loadClass(Users);
+schema.loadClass(Roles);
 module.exports = mongoose.model("roles", schema);

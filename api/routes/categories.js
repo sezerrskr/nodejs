@@ -5,6 +5,7 @@ const Response = require("../lib/response")
 const CustomError = require("../lib/error")
 const Enum = require("../config/enum")
 
+
 router.get('/', async (req, res, next) => {
 
     try {
@@ -20,7 +21,7 @@ router.post('/add', async (req, res, next) => {
     let body = req.body;
     try {
 
-        if (!body.name) throw new CustomError(Enum.HTTP_CODES.BAD_REQUEST, "Validation Error!", "Name fields must be filled");
+        if (!body.name) throw new CustomError(Enum.HTTP_CODES.BAD_REQUEST, "Validation Error!", "Name field must be filled");
 
         let category = new Categories({
             name: body.name,

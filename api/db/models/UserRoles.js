@@ -7,7 +7,7 @@ const schema = mongoose.Schema({
 
 }, {
     versionKey: false,
-    timeStamps: {
+    timestamps: {
         createdAt: "created_at",
         updatedAt: "updated_at"
     }
@@ -18,4 +18,4 @@ class UserRoles extends mongoose.Model {
 }
 
 schema.loadClass(UserRoles);
-moduele.export = mongoose.model("user_roles", schema);
+module.exports = mongoose.model("user_roles", schema);

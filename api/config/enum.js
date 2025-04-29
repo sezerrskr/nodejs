@@ -18,5 +18,6 @@ module.exports = {
         TOO_MANY_REQUESTS: 429,
         INT_SERVER_ERROR: 500,
         BAD_GATEWAY: 502,
-    }
+    },
+    PASSWORD_LENGTH: 8
 }

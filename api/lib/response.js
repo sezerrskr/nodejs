@@ -26,8 +26,8 @@ class Response {
             return {
                 code: Enum.HTTP_CODES.CONFLICT,
                 error: {
-                    message: "Already exists!",
-                    description: "Already exists!"
+                    message: "Zaten var!",
+                    description: "Zaten var!"
                 }
             }
         }

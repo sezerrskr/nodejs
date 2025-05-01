@@ -1,12 +1,11 @@
 const mongoose = require("mongoose");
-
+const Schema = mongoose.Schema;
 
 const schema = mongoose.Schema({
-    level: String,
-    email: String,
     location: String,
     proc_type: String,
-    log: String,
+    level: String,
+    log: Schema.Types.Mixed, // <--- Buraya dikkat!
 }, {
     versionKey: false,
     timestamps: {

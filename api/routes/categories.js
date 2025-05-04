@@ -22,7 +22,7 @@ router.post('/add', async (req, res, next) => {
     let body = req.body;
     try {
 
-        if (!body.name) throw new CustomError(Enum.HTTP_CODES.BAD_REQUEST, "Validation Error!", "Name field must be filled");
+        if (!body.name) throw new CustomError(Enum.HTTP_CODES.BAD_REQUEST, "Validation Error!", "Isım alanı doldurulmalı.");
 
         let category = new Categories({
             name: body.name,

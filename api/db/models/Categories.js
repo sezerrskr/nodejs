@@ -13,6 +13,8 @@ const schema = mongoose.Schema({
     }
 })
 
+// merhaba emir
+
 class Categories extends mongoose.Model {
 
 }
